@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lavínia Nabucco - Micropigmentação e Design de Sobrancelhas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { 
+            font-family: 'Montserrat', sans-serif; 
+            background-color: #F8F3F0; 
+            scroll-behavior: smooth;
+        }
+        .logo-font { font-family: 'Playfair Display', serif; }
+        .bg-bordo { background-color: #8C2131; }
+        .text-bordo { color: #8C2131; }
+        .btn-hover { 
+            transition: all 0.3s ease; 
+        }
+        .btn-hover:hover { 
+            transform: translateY(-2px); 
+            box-shadow: 0 10px 25px rgba(140, 33, 49, 0.3); 
+        }
+        .hamburger span { transition: 0.3s; }
+        .nav-open .hamburger span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+        .nav-open .hamburger span:nth-child(2) { opacity: 0; }
+        .nav-open .hamburger span:nth-child(3) { transform: rotate(-45deg) translate(7px, -6px); }
+        #whatsapp-floater { transition: all 0.3s ease; }
+        #whatsapp-floater:hover { transform: scale(1.1) rotate(10deg); }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 shadow-sm">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="logo-font text-3xl md:text-4xl text-bordo font-bold tracking-tight">LAVÍNIA NABUCCO</div>
+            
+            <nav class="hidden lg:flex gap-8 text-lg font-medium tracking-wide">
+                <a href="#clinica" class="hover:text-bordo transition-colors">Clínica</a>
+                <a href="#academy" class="hover:text-bordo transition-colors">Academy</a>
+                <a href="#infoprodutos" class="hover:text-bordo transition-colors">Infoprodutos</a>
+                <a href="#contato" class="hover:text-bordo transition-colors">Contato</a>
+            </nav>
+            
+            <button id="mobile-toggle" class="lg:hidden btn-hover">
+                <svg class="hamburger w-8 h-8 text-bordo" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <span class="block w-8 h-0.5 bg-bordo mx-auto my-1"></span>
+                    <span class="block w-8 h-0.5 bg-bordo mx-auto my-1"></span>
+                    <span class="block w-8 h-0.5 bg-bordo mx-auto my-1"></span>
+                </svg>
+            </button>
+            
+            <nav id="mobile-nav" class="hidden absolute lg:hidden top-full left-0 w-full bg-white shadow-xl py-8 lg:hidden">
+                <div class="max-w-6xl mx-auto px-6 flex flex-col gap-6 text-xl font-semibold">
+                    <a href="#clinica" class="hover:text-bordo py-2">Clínica</a>
+                    <a href="#academy" class="hover:text-bordo py-2">Academy</a>
+                    <a href="#infoprodutos" class="hover:text-bordo py-2">Infoprodutos</a>
+                    <a href="#contato" class="hover:text-bordo py-2">Contato</a>
+                </div>
+            </nav>
+            
+            <button id="btn-agendar-header" class="bg-bordo text-white px-8 py-3 rounded-md text-lg font-semibold btn-hover shadow-lg hidden md:block ml-4">Agende sua Avaliação</button>
+        </div>
+    </header>
+
+    <section class="min-h-screen flex items-center justify-between max-w-6xl mx-auto px-6 py-20">
+        <div class="md:w-1/2 space-y-8">
+            <h2 class="text-sm font-bold tracking-widest text-bordo uppercase letter-spacing-2">Transformação Profissional</h2>
+            <h1 class="logo-font text-5xl md:text-7xl font-bold leading-none md:leading-tight">
+                Beleza, Autoestima <br class="hidden md:block">
+                <span class="italic text-bordo block">e a Melhor Formação<br>do Brasil.</span>
+            </h1>
+            <p class="text-xl text-gray-600 leading-relaxed max-w-lg">
+                Descubra a transformação através do design de sobrancelhas e micropigmentação com técnicas exclusivas que elevam sua autoestima e carreira.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 pt-8">
+                <button id="btn-agendar-hero" class="bg-bordo text-white px-10 py-4 rounded-lg font-semibold text-lg btn-hover shadow-xl max-w-xs">
+                    Agendar Procedimento
+                </button>
+                <a href="#academy" class="border-2 border-bordo text-bordo px-10 py-4 rounded-lg font-semibold text-lg btn-hover shadow-lg text-center max-w-xs">
+                    Conhecer os Cursos
+                </a>
+            </div>
+        </div>
+        <div class="md:w-1/2 relative mt-12 md:mt-0">
+            <div class="absolute -inset-4 bg-gradient-to-br from-bordo/10 to-transparent rounded-3xl blur-xl"></div>
+            <div class="relative bg-white/70 backdrop-blur-xl rounded-3xl shadow-2xl p-8 border border-white/50 h-[500px] md:h-[600px] flex items-center justify-center">
+                <img src="https://images.unsplash.com/photo-1625772299846-4e9f2627de92?w=500&h=600&fit=crop&crop=face" alt="Lavínia Nabucco" class="w-full h-full object-cover rounded-2xl shadow-lg">
+            </div>
+        </div>
+    </section>
+
+    <section id="clinica" class="py-32 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-24">
+                <h2 class="logo-font text-5xl md:text-6xl font-bold text-gray-900 mb-6">Nossos Procedimentos</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Serviços premium de estética facial com técnicas exclusivas para resultados naturais e duradouros.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+                <div class="group bg-white/50 backdrop-blur-sm rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 border border-white/30">
+                    <div class="w-full h-48 rounded-xl overflow-hidden mb-6 bg-gradient-to-r from-amber-50 to-orange-50 group-hover:scale-105 transition-transform">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop" alt="Design de Sobrancelhas" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="logo-font text-2xl font-bold text-gray-900 mb-4">Design de Sobrancelhas</h3>
+                    <p class="text-gray-600 mb-8 leading-relaxed">Harmonização facial perfeita através do design exclusivo que valoriza seus traços naturais.</p>
+                    <button class="w-full bg-bordo text-white py-4 rounded-lg font-semibold text-lg btn-hover shadow-lg" onclick="openWhatsApp('Olá! Interessada no Design de Sobrancelhas.')">
+                        Quero saber mais
+                    </button>
+                </div>
+                <div class="group bg-white/50 backdrop-blur-sm rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 border border-white/30">
+                    <div class="w-full h-48 rounded-xl overflow-hidden mb-6 bg-gradient-to-r from-pink-50 to-rose-50 group-hover:scale-105 transition-transform">
+                        <img src="https://images.unsplash.com/photo-1622188605892-e7a291e14c96?w=400&h=300&fit=crop" alt="Micropigmentação Labial" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="logo-font text-2xl font-bold text-gray-900 mb-4">Micropigmentação Labial</h3>
+                    <p class="text-gray-600 mb-8 leading-relaxed">Lábios definidos e volumosos naturalmente com a técnica Uniform Lips.</p>
+                    <button class="w-full bg-bordo text-white py-4 rounded-lg font-semibold text-lg btn-hover shadow-lg" onclick="openWhatsApp('Olá! Interessada na Micropigmentação Labial.')">
+                        Quero saber mais
+                    </button>
+                </div>
+                <div class="group bg-white/50 backdrop-blur-sm rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 border border-white/30">
+                    <div class="w-full h-48 rounded-xl overflow-hidden mb-6 bg-gradient-to-r from-blue-50 to-indigo-50 group-hover:scale-105 transition-transform">
+                        <img src="https://images.unsplash.com/photo-1578493609548-d6e52a7e977c?w=400&h=300&fit=crop" alt="Brow Lamination" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="logo-font text-2xl font-bold text-gray-900 mb-4">Brow Lamination</h3>
+                    <p class="text-gray-600 mb-8 leading-relaxed">Sobrancelhas disciplinadas e preenchidas por até 8 semanas.</p>
+                    <button class="w-full bg-bordo text-white py-4 rounded-lg font-semibold text-lg btn-hover shadow-lg" onclick="openWhatsApp('Olá! Interessada no Brow Lamination.')">
+                        Quero saber mais
+                    </button>
+                </div>
+                <div class="group bg-white/50 backdrop-blur-sm rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 border border-white/30">
+                    <div class="w-full h-48 rounded-xl overflow-hidden mb-6 bg-gradient-to-r from-emerald-50 to-teal-50 group-hover:scale-105 transition-transform">
+                        <img src="https://images.unsplash.com/photo-1591370874779-ecab7d1ebb03?w=400&h=300&fit=crop" alt="Lash Lifting" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="logo-font text-2xl font-bold text-gray-900 mb-4">Lash Lifting</h3>
+                    <p class="text-gray-600 mb-8 leading-relaxed">Cílios naturalmente curvados sem necessidade de extensão.</p>
+                    <button class="w-full bg-bordo text-white py-4 rounded-lg font-semibold text-lg btn-hover shadow-lg" onclick="openWhatsApp('Olá! Interessada no Lash Lifting.')">
+                        Quero saber mais
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="academy" class="py-32 bg-gradient-to-b from-bordo to-red-900 text-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-24">
+                <h2 class="logo-font text-5xl md:text-6xl font-bold mb-6">Academy Lavínia Nabucco</h2>
+                <p class="text-2xl text-red-100 opacity-90 max-w-3xl mx-auto leading-relaxed">A melhor formação profissional em micropigmentação e design de sobrancelhas do Brasil. Torne-se referência!</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white/10 backdrop-blur-xl rounded-2xl p-10 shadow-2xl border border-white/20 hover:bg-white/20 transition-all">
+                    <div class="w-24 h-24 bg-white/20 rounded-2xl mb-6 flex items-center justify-center mx-auto">
+                        <span class="logo-font text-2xl">📖</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-6 text-center">Guia Uniform Lips</h3>
+                    <p class="text-red-100 mb-8 text-center opacity-80 leading-relaxed">Guia completo da técnica labial mais procurada do mercado.</p>
+                    <a href="#" class="block w-full bg-white text-bordo py-5 rounded-xl font-bold text-xl text-center btn-hover shadow-xl">Comprar Agora R$197</a>
+                </div>
+                <div class="bg-white/10 backdrop-blur-xl rounded-2xl p-10 shadow-2xl border border-white/20 hover:bg-white/20 transition-all">
+                    <div class="w-24 h-24 bg-white/20 rounded-2xl mb-6 flex items-center justify-center mx-auto">
+                        <span class="logo-font text-2xl">📄</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-6 text-center">Apostilas Editáveis</h3>
+                    <p class="text-red-100 mb-8 text-center opacity-80 leading-relaxed">400+ páginas de anatomia, protocolos e materiais atualizados.</p>
+                    <a href="#" class="block w-full bg-white text-bordo py-5 rounded-xl font-bold text-xl text-center btn-hover shadow-xl">Comprar Agora R$297</a>
+                </div>
+                <div class="bg-white/10 backdrop-blur-xl rounded-2xl p-10 shadow-2xl border border-white/20 hover:bg-white/20 transition-all md:col-span-2 lg:col-span-1">
+                    <div class="w-24 h-24 bg-white/20 rounded-2xl mb-6 flex items-center justify-center mx-auto">
+                        <span class="logo-font text-2xl">🎓</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-6 text-center">Curso Presencial Completo</h3>
+                    <p class="text-red-100 mb-8 text-center opacity-80 leading-relaxed">5 dias intensivos + 12 meses mentoria + certificado internacional.</p>
+                    <a href="#" class="block w-full bg-white text-bordo py-5 rounded-xl font-bold text-xl text-center btn-hover shadow-xl">Inscreva-se R$7.997</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contato" class="bg-gray-900 text-white py-16">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-12">
+            <div>
+                <div class="logo-font text-3xl text-bordo font-bold mb-6">LAVÍNIA NABUCCO</div>
+                <p class="text-gray-400 leading-relaxed mb-8">Referência nacional em micropigmentação e design de sobrancelhas. Transformamos autoestima e carreiras.</p>
+                <div class="flex gap-4">
+                    <a href="#" class="w-12 h-12 bg-bordo rounded-full flex items-center justify-center hover:bg-red-700 transition-colors"><span>📘</span></a>
+                    <a href="#" class="w-12 h-12 bg-bordo rounded-full flex items-center justify-center hover:bg-red-700 transition-colors"><span>📷</span></a>
+                    <a href="#" class="w-12 h-12 bg-bordo rounded-full flex items-center justify-center hover:bg-red-700 transition-colors"><span>📘</span></a>
+                </div>
+            </div>
+            <div>
+                <h4 class="logo-font text-2xl font-bold text-bordo mb-6">Clínica</h4>
+                <ul class="space-y-3 text-gray-400">
+                    <li>Design de Sobrancelhas</li>
+                    <li>Micropigmentação Labial</li>
+                    <li>Brow Lamination</li>
+                    <li>Lash Lifting</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="logo-font text-2xl font-bold text-bordo mb-6">Contato</h4>
+                <p class="text-gray-400 mb-4">Rua das Flores, 123 - Centro<br>Salvador, SSA</p>
+                <p class="text-gray-400 mb-6">(11) 99999-9999<br>contato@lavinianabucco.com.br</p>
+                <button class="w-full bg-bordo text-white py-3 rounded-lg font-semibold btn-hover shadow-lg" onclick="openWhatsApp('Olá! Preciso de informações.')">
+                    Falar no WhatsApp
+                </button>
+            </div>
+        </div>
+        <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500 text-sm">
+            © 2024 Lavínia Nabucco. Todos os direitos reservados.
+        </div>
+    </footer>
+
+    <button id="whatsapp-floater" class="fixed bottom-8 right-8 w-16 h-16 bg-green-500 text-white rounded-full shadow-2xl flex items-center justify-center text-2xl hover:bg-green-600 z-50 btn-hover">
+        💬
+    </button>
+
+    <div id="agendamento-modal" class="hidden fixed inset-0 z-[100] bg-black/60 backdrop-blur-sm items-center justify-center p-4">
+        <div class="bg-white rounded-3xl w-full max-w-2xl overflow-hidden shadow-2xl relative">
+            <div class="flex justify-between items-center p-6 border-b border-gray-100 bg-[#F8F3F0]">
+                <h3 class="text-2xl font-playfair font-semibold text-[#8C2131]">Escolha o melhor horário</h3>
+                <button id="close-modal" class="text-gray-400 hover:text-[#8C2131] transition-colors bg-white rounded-full p-2 shadow-sm">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <div class="p-6 h-[500px] flex items-center justify-center bg-white">
+                <div class="text-center border-2 border-dashed border-gray-300 rounded-xl p-10 w-full h-full flex flex-col items-center justify-center bg-gray-50">
+                    <svg class="w-16 h-16 text-gray-400 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                    </svg>
+                    <p class="text-gray-600 font-medium text-lg">
+                        [Área reservada para o Sistema de Agendamento]
+                    </p>
+                    <p class="text-sm text-gray-500 mt-2 max-w-sm">
+                        Aqui entrará a integração real com a agenda. O cliente escolhe a data e a vaga é bloqueada automaticamente.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // WhatsApp function
+        function openWhatsApp(message) {
+            const phone = '5511999999999'; // Substitua pelo número dela depois
+            const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+            window.open(url, '_blank');
+        }
+
+        // Mobile nav toggle
+        const mobileToggle = document.getElementById('mobile-toggle');
+        const mobileNav = document.getElementById('mobile-nav');
+        const body = document.body;
+
+        mobileToggle.addEventListener('click', () => {
+            body.classList.toggle('nav-open');
+            mobileNav.classList.toggle('hidden');
+        });
+
+        // Close mobile nav on link click
+        document.querySelectorAll('#mobile-nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileNav.classList.add('hidden');
+                body.classList.remove('nav-open');
+            });
+        });
+
+        // WhatsApp floater
+        document.getElementById('whatsapp-floater').addEventListener('click', () => {
+            openWhatsApp('Olá! Gostaria de mais informações sobre os serviços.');
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // ========================================
+        // INTELIGÊNCIA DO MODAL DE AGENDAMENTO
+        // ========================================
+        const modal = document.getElementById('agendamento-modal');
+        const btnHeader = document.getElementById('btn-agendar-header');
+        const btnHero = document.getElementById('btn-agendar-hero');
+        const btnClose = document.getElementById('close-modal');
+
+        function openModal() {
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            document.body.style.overflow = 'hidden'; 
+        }
+
+        function closeModal() {
+            modal.classList.remove('flex');
+            modal.classList.add('hidden');
+            document.body.style.overflow = 'auto'; 
+        }
+
+        if(btnHeader) btnHeader.addEventListener('click', openModal);
+        if(btnHero) btnHero.addEventListener('click', openModal);
+        if(btnClose) btnClose.addEventListener('click', closeModal);
+
+        modal.addEventListener('click', function(event) {
+            if (event.target === modal) {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+</html>
